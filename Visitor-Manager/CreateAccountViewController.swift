@@ -12,6 +12,7 @@ class CreateAccountViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordCheckTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,32 +21,50 @@ class CreateAccountViewController: UIViewController {
     }
     
     @IBAction func createAccountClicked(_ sender: UIButton) {
-        guard let email = emailTextField.text else { return }
-        guard let password = passwordTextField.text else { return }
+        guard let email = emailTextField.text, !email.isEmpty else {
+            // Handle empty email field
+            showAlert(message: "Please enter an email address.")
+            return
+        }
+        guard let password = passwordTextField.text, !password.isEmpty else {
+            // Handle empty password field
+            showAlert(message: "Please enter a password.")
+            return
+        }
+        guard let passwordCheck = passwordCheckTextField.text, !passwordCheck.isEmpty else {
+            // Handle empty password check field
+            showAlert(message: "Please confirm your password.")
+            return
+        }
         
-        Auth.auth().createUser(withEmail: email, password: password) { firebaseResult, error in
-            if let e = error {
-                DispatchQueue.main.async {
-                    print("Error signing in: \(e.localizedDescription)")
+        if password == passwordCheck{
+            Auth.auth().createUser(withEmail: email, password: password) { [weak self] authResult, error in
+                guard let strongSelf = self else { return }
+
+                if let e = error {
+                    DispatchQueue.main.async {
+                        strongSelf.showAlert(message: "Error creating account: \(e.localizedDescription)")
+                    }
+                    return
                 }
-            } else {
-                DispatchQueue.main.async {
-                    self.performSegue(withIdentifier: "goToNext", sender: self)
-                }
+                    DispatchQueue.main.async {
+                        strongSelf.performSegue(withIdentifier: "goToNext", sender: strongSelf)
+                    }
             }
+        } else {
+            passwordTextField.text = ""
+            passwordCheckTextField.text = ""
+            showAlert(message: "Passwords do not match.")
+                
         }
 
         
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func showAlert(message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
-    */
 
 }

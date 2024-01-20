@@ -20,20 +20,37 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func logInClicked(_ sender: UIButton) {
-        guard let email = emailTextField.text else { return }
-        guard let password = passwordTextField.text else { return }
-        
-        Auth.auth().signIn(withEmail: email, password: password) { firebaseResult, error in
+        guard let email = emailTextField.text, !email.isEmpty else {
+            showAlert(message: "Please enter your email.")
+            return
+        }
+        guard let password = passwordTextField.text, !password.isEmpty else {
+            showAlert(message: "Please enter your password.")
+            return
+        }
+
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] firebaseResult, error in
+            guard let strongSelf = self else { return }
+
             if let e = error {
                 DispatchQueue.main.async {
-                    print("Error signing up: \(e.localizedDescription)")
+                    strongSelf.showAlert(message: "Error signing in: \(e.localizedDescription)")
                 }
-            } else {
-                DispatchQueue.main.async {
-                    self.performSegue(withIdentifier: "goToNext", sender: self)
-                }
+                return
+            }
+
+            DispatchQueue.main.async {
+                strongSelf.performSegue(withIdentifier: "goToNext", sender: strongSelf)
             }
         }
+    }
+
+    private func showAlert(message: String) {
+        let alert = UIAlertController(title: "Authentication Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true)
+    }
+
         
         /*
          // MARK: - Navigation

@@ -18,11 +18,11 @@
                         <viewLayoutGuide key="safeArea" id="Og6-s4-elQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sVA-qF-LQN"/>
+                    <navigationItem key="navigationItem" style="editor" id="sVA-qF-LQN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ie1-Sb-hA2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1489" y="-785"/>
+            <point key="canvasLocation" x="1488" y="-751"/>
         </scene>
         <!--Log In-->
         <scene sceneID="tne-QT-ifu">
@@ -91,8 +91,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kap-hT-OPt">
-                                <rect key="frame" x="93" y="409" width="207" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GCv-78-bTf">
+                                <rect key="frame" x="93" y="482" width="207" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -106,13 +106,20 @@
                                     <action selector="createAccountClicked:" destination="3nZ-ow-uxM" eventType="touchUpInside" id="gyJ-Iu-UUq"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kap-hT-OPt">
+                                <rect key="frame" x="93" y="422" width="207" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MJ7-U0-xhX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Create Account" id="Vb5-0e-oDf"/>
+                    <navigationItem key="navigationItem" title="Create Account" style="editor" id="Vb5-0e-oDf"/>
                     <connections>
                         <outlet property="emailTextField" destination="UPN-xM-kIh" id="pb5-vR-01u"/>
+                        <outlet property="passwordCheckTextField" destination="GCv-78-bTf" id="iX1-mz-b6Y"/>
                         <outlet property="passwordTextField" destination="Kap-hT-OPt" id="CXl-Zc-Hwy"/>
                         <segue destination="ZzD-ub-ezH" kind="show" identifier="goToNext" id="HDy-Ei-66k"/>
                     </connections>
@@ -141,7 +148,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5kg-yx-nZK"/>
+        <segue reference="HDy-Ei-66k"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
