@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyD7T8JZbyDY9a9BFJf3Q6-7PhyvV324nL4</string>
+	<string>AIzaSyDwA_LyCeDpds-xMskFHq8IlKlYwpVBUZU</string>
 	<key>GCM_SENDER_ID</key>
-	<string>283402004392</string>
+	<string>290143431909</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.DiegoCico.ID-Manager</string>
+	<string>com.DiegoCico.Visitor-Manager</string>
 	<key>PROJECT_ID</key>
-	<string>idmanagment</string>
+	<string>visitor-manager-cef57</string>
 	<key>STORAGE_BUCKET</key>
-	<string>idmanagment.appspot.com</string>
+	<string>visitor-manager-cef57.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:283402004392:ios:a941fe7173e8cfaeaddf9d</string>
+	<string>1:290143431909:ios:075144ae066cbd76ab380c</string>
 </dict>
 </plist>
