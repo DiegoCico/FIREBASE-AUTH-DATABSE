@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8311F6832B5C8D7800260DAA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8311F6822B5C8D7800260DAA /* GoogleService-Info.plist */; };
+		8311F6852B5C93EF00260DAA /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311F6842B5C93EF00260DAA /* ForgotPasswordViewController.swift */; };
 		83966E172B5B300100D1F3A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83966E162B5B300100D1F3A4 /* AppDelegate.swift */; };
 		83966E192B5B300100D1F3A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83966E182B5B300100D1F3A4 /* SceneDelegate.swift */; };
 		83966E1E2B5B300100D1F3A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83966E1C2B5B300100D1F3A4 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		8311F6822B5C8D7800260DAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8311F6842B5C93EF00260DAA /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		83966E132B5B300100D1F3A4 /* Visitor-Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visitor-Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83966E162B5B300100D1F3A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83966E182B5B300100D1F3A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,11 +120,12 @@
 				83966E182B5B300100D1F3A4 /* SceneDelegate.swift */,
 				83966E2A2B5B303900D1F3A4 /* LoginViewController.swift */,
 				83966E2C2B5B31AB00D1F3A4 /* CreateAccountViewController.swift */,
+				8311F6842B5C93EF00260DAA /* ForgotPasswordViewController.swift */,
+				8311F6822B5C8D7800260DAA /* GoogleService-Info.plist */,
 				83966E1C2B5B300100D1F3A4 /* Main.storyboard */,
 				83966E1F2B5B300100D1F3A4 /* Assets.xcassets */,
 				83966E212B5B300100D1F3A4 /* LaunchScreen.storyboard */,
 				83966E242B5B300100D1F3A4 /* Info.plist */,
-				8311F6822B5C8D7800260DAA /* GoogleService-Info.plist */,
 			);
 			path = "Visitor-Manager";
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83966E2D2B5B31AB00D1F3A4 /* CreateAccountViewController.swift in Sources */,
+				8311F6852B5C93EF00260DAA /* ForgotPasswordViewController.swift in Sources */,
 				83966E2B2B5B303900D1F3A4 /* LoginViewController.swift in Sources */,
 				83966E172B5B300100D1F3A4 /* AppDelegate.swift in Sources */,
 				83966E192B5B300100D1F3A4 /* SceneDelegate.swift in Sources */,
