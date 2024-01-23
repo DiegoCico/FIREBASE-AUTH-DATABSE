@@ -2,28 +2,45 @@
 //  PopupViewController.swift
 //  Visitor-Manager
 //
-//  Created by Diego Cicotoste on 1/23/24.
+//  Created by Diego Cicotoste on 1/21/24.
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class PopupViewController: UIViewController {
 
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
+    @IBAction func saveButtonClicked(_ sender: Any) {
+        let title = titleTextField.text ?? ""
+        let description = descriptionTextField.text ?? ""
+        let date = datePicker.date
+        
+        guard let userID = Auth.auth().currentUser?.uid else {
+               print("User not logged in")
+               return
+           }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+           let data: [String: Any] = ["title": title, "description": description, "date": date.timeIntervalSince1970]
+
+           let ref = Database.database().reference()
+           ref.child("userItems").child(userID).childByAutoId().setValue(data) { error, _ in
+               if let error = error {
+                   print("Data could not be saved: \(error.localizedDescription)")
+               } else {
+                   print("Data saved successfully")
+               }
+           }
     }
-    */
-
+    
 }
