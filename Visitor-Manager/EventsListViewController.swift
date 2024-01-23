@@ -11,6 +11,8 @@ class EventsListViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         tableView.dataSource = self
         fetchEventsFromFirebase()
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "EventCell")
     }
     
     struct Event {
@@ -27,7 +29,7 @@ class EventsListViewController: UIViewController, UITableViewDataSource {
            }
         
         // Assuming each user has their events stored under a node named with their userID
-        let ref = Database.database().reference().child("userEvents").child(userID)
+        let ref = Database.database().reference().child("userItems").child(userID)
         ref.observe(.value) { snapshot in
             print("Snapshot: \(snapshot)")
             var newEvents: [Event] = []
