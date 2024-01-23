@@ -41,7 +41,7 @@
         <!--Creating Event-->
         <scene sceneID="x1g-wJ-Mr6">
             <objects>
-                <viewController id="LkC-o0-Gv3" customClass="PopupViewController" customModule="Visitor_Manager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LkC-o0-Gv3" customClass="CreateEventViewController" customModule="Visitor_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iAN-Rr-pRo">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -1,25 +1,25 @@
 //
-//  PopupViewController.swift
+//  CreateEventViewController.swift
 //  Visitor-Manager
 //
-//  Created by Diego Cicotoste on 1/21/24.
+//  Created by Diego Cicotoste on 1/23/24.
 //
 
 import UIKit
 import Firebase
-import FirebaseDatabase
 
-class PopupViewController: UIViewController {
-
+class CreateEventViewController: UIViewController {
+    
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
 
     @IBAction func saveButtonClicked(_ sender: Any) {
         let title = titleTextField.text ?? ""
@@ -42,5 +42,5 @@ class PopupViewController: UIViewController {
                }
            }
     }
-    
+
 }

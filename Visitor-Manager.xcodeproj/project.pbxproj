@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8311F6852B5C93EF00260DAA /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311F6842B5C93EF00260DAA /* ForgotPasswordViewController.swift */; };
+		833CFAC42B5FDC5400C43CA0 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833CFAC32B5FDC5400C43CA0 /* CreateEventViewController.swift */; };
 		8360DE9F2B5DB2C1001504C8 /* EventsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DE9E2B5DB2C1001504C8 /* EventsListViewController.swift */; };
-		8360DEA32B5DBDE6001504C8 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DEA22B5DBDE6001504C8 /* PopupViewController.swift */; };
 		8377DAA32B5DC15A00A7A109 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8377DAA22B5DC15A00A7A109 /* FirebaseAnalytics */; };
 		8377DAA52B5DC15A00A7A109 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 8377DAA42B5DC15A00A7A109 /* FirebaseAnalyticsOnDeviceConversion */; };
 		8377DAA72B5DC15A00A7A109 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8377DAA62B5DC15A00A7A109 /* FirebaseAnalyticsSwift */; };
@@ -103,8 +103,8 @@
 
 /* Begin PBXFileReference section */
 		8311F6842B5C93EF00260DAA /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		833CFAC32B5FDC5400C43CA0 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		8360DE9E2B5DB2C1001504C8 /* EventsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListViewController.swift; sourceTree = "<group>"; };
-		8360DEA22B5DBDE6001504C8 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		8377DADA2B5DC1DF00A7A109 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		83966E132B5B300100D1F3A4 /* Visitor-Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visitor-Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83966E162B5B300100D1F3A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -234,7 +234,7 @@
 				83966E2C2B5B31AB00D1F3A4 /* CreateAccountViewController.swift */,
 				8311F6842B5C93EF00260DAA /* ForgotPasswordViewController.swift */,
 				8360DE9E2B5DB2C1001504C8 /* EventsListViewController.swift */,
-				8360DEA22B5DBDE6001504C8 /* PopupViewController.swift */,
+				833CFAC32B5FDC5400C43CA0 /* CreateEventViewController.swift */,
 				83966E1C2B5B300100D1F3A4 /* Main.storyboard */,
 				83966E1F2B5B300100D1F3A4 /* Assets.xcassets */,
 				83966E212B5B300100D1F3A4 /* LaunchScreen.storyboard */,
@@ -405,10 +405,10 @@
 				83966E2D2B5B31AB00D1F3A4 /* CreateAccountViewController.swift in Sources */,
 				8360DE9F2B5DB2C1001504C8 /* EventsListViewController.swift in Sources */,
 				8311F6852B5C93EF00260DAA /* ForgotPasswordViewController.swift in Sources */,
+				833CFAC42B5FDC5400C43CA0 /* CreateEventViewController.swift in Sources */,
 				83966E2B2B5B303900D1F3A4 /* LoginViewController.swift in Sources */,
 				83966E172B5B300100D1F3A4 /* AppDelegate.swift in Sources */,
 				83966E192B5B300100D1F3A4 /* SceneDelegate.swift in Sources */,
-				8360DEA32B5DBDE6001504C8 /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
