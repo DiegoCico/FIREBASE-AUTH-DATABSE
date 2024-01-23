@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8311F6832B5C8D7800260DAA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8311F6822B5C8D7800260DAA /* GoogleService-Info.plist */; };
 		8311F6852B5C93EF00260DAA /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311F6842B5C93EF00260DAA /* ForgotPasswordViewController.swift */; };
 		8360DE9F2B5DB2C1001504C8 /* EventsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DE9E2B5DB2C1001504C8 /* EventsListViewController.swift */; };
 		8360DEA32B5DBDE6001504C8 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DEA22B5DBDE6001504C8 /* PopupViewController.swift */; };
@@ -73,10 +72,10 @@
 		83966E622B5B32D700D1F3A4 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 83966E612B5B32D700D1F3A4 /* FirebaseRemoteConfigSwift */; };
 		83966E642B5B32D700D1F3A4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 83966E632B5B32D700D1F3A4 /* FirebaseStorage */; };
 		83966E662B5B32D700D1F3A4 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 83966E652B5B32D700D1F3A4 /* FirebaseStorageCombine-Community */; };
+		83FF72932B62999E00443D67 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FF72922B62999E00443D67 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8311F6822B5C8D7800260DAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8311F6842B5C93EF00260DAA /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		8360DE9E2B5DB2C1001504C8 /* EventsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListViewController.swift; sourceTree = "<group>"; };
 		8360DEA22B5DBDE6001504C8 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +89,7 @@
 		83966E242B5B300100D1F3A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83966E2A2B5B303900D1F3A4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		83966E2C2B5B31AB00D1F3A4 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		83FF72922B62999E00443D67 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +182,7 @@
 				83966E2C2B5B31AB00D1F3A4 /* CreateAccountViewController.swift */,
 				8311F6842B5C93EF00260DAA /* ForgotPasswordViewController.swift */,
 				8360DE9E2B5DB2C1001504C8 /* EventsListViewController.swift */,
+				83FF72922B62999E00443D67 /* DetailViewController.swift */,
 				8360DEA22B5DBDE6001504C8 /* PopupViewController.swift */,
 				83966E1C2B5B300100D1F3A4 /* Main.storyboard */,
 				83966E1F2B5B300100D1F3A4 /* Assets.xcassets */,
@@ -330,6 +331,7 @@
 				83966E172B5B300100D1F3A4 /* AppDelegate.swift in Sources */,
 				83966E192B5B300100D1F3A4 /* SceneDelegate.swift in Sources */,
 				8360DEA32B5DBDE6001504C8 /* PopupViewController.swift in Sources */,
+				83FF72932B62999E00443D67 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
